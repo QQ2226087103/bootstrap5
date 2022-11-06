@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>BS表格</title>
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap的JS插件 -->
+    <script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+    <h1>基础表格</h1>
+    <p>.table 类为表格添加了基本样式（浅色内边距和水平分割线）：</p>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Bill</td>
+            <td>Gates</td>
+            <td>bill@example.com</td>
+        </tr>
+        <tr>
+            <td>Steve</td>
+            <td>Jobs</td>
+            <td>steve@example.com</td>
+        </tr>
+        <tr>
+            <td>Elon</td>
+            <td>Musk</td>
+            <td>elon@example.com</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h1>条纹行</h1>
+    <p>.table-striped 类将斑马条纹添加到表中：</p>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Bill</td>
+            <td>Gates</td>
+            <td>bill@example.com</td>
+        </tr>
+        <tr>
+            <td>Steve</td>
+            <td>Jobs</td>
+            <td>steve@example.com</td>
+        </tr>
+        <tr>
+            <td>Elon</td>
+            <td>Musk</td>
+            <td>elon@example.com</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h1>带边框的表格</h1>
+    <p>.table-bordered 类在表格和单元格的所有边添加边框：</p>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Bill</td>
+            <td>Gates</td>
+            <td>bill@example.com</td>
+        </tr>
+        <tr>
+            <td>Steve</td>
+            <td>Jobs</td>
+            <td>steve@example.com</td>
+        </tr>
+        <tr>
+            <td>Elon</td>
+            <td>Musk</td>
+            <td>elon@example.com</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h1>有悬停效果的行</h1>
+    <p>.table-hover 类在表格行上启用悬停状态（鼠标悬停时的灰色背景）：</p>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Bill</td>
+            <td>Gates</td>
+            <td>bill@example.com</td>
+        </tr>
+        <tr>
+            <td>Steve</td>
+            <td>Jobs</td>
+            <td>steve@example.com</td>
+        </tr>
+        <tr>
+            <td>Elon</td>
+            <td>Musk</td>
+            <td>elon@example.com</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h1>黑色/深色表格</h1>
+    <p>.table-dark 类为表格添加黑色背景：</p>
+    <table class="table table-dark">
+        <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Bill</td>
+            <td>Gates</td>
+            <td>bill@example.com</td>
+        </tr>
+        <tr>
+            <td>Steve</td>
+            <td>Jobs</td>
+            <td>steve@example.com</td>
+        </tr>
+        <tr>
+            <td>Elon</td>
+            <td>Musk</td>
+            <td>elon@example.com</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h1>深色条纹表格</h1>
+    <p>结合 .table-dark 和 .table-striped 来创建深色的条纹表格：</p>
+    <table class="table table-dark table-striped">
+        <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Bill</td>
+            <td>Gates</td>
+            <td>bill@example.com</td>
+        </tr>
+        <tr>
+            <td>Steve</td>
+            <td>Jobs</td>
+            <td>steve@example.com</td>
+        </tr>
+        <tr>
+            <td>Elon</td>
+            <td>Musk</td>
+            <td>elon@example.com</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h1>可悬停的深色表格</h1>
+    <p>.table-hover 类在表格行上添加悬停效果（灰色背景色）：</p>
+    <table class="table table-dark table-hover">
+        <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Bill</td>
+            <td>Gates</td>
+            <td>bill@example.com</td>
+        </tr>
+        <tr>
+            <td>Steve</td>
+            <td>Jobs</td>
+            <td>steve@example.com</td>
+        </tr>
+        <tr>
+            <td>Elon</td>
+            <td>Musk</td>
+            <td>elon@example.com</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h1>无边框表格</h1>
+    <p>.table-borderless 类从表格中删除边框：</p>
+    <table class="table table-borderless">
+        <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Bill</td>
+            <td>Gates</td>
+            <td>bill@example.com</td>
+        </tr>
+        <tr>
+            <td>Steve</td>
+            <td>Jobs</td>
+            <td>steve@example.com</td>
+        </tr>
+        <tr>
+            <td>Elon</td>
+            <td>Musk</td>
+            <td>elon@example.com</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h1>上下文类</h1>
+    <p>上下文类可用于为表格、表格行或表格单元格着色。可以使用的类有：.table-primary、.table-success、.table-info、.table-warning、.table-danger、.table-active、.table-secondary、.table-light 和 .table-dark：</p>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Default</td>
+            <td>Defaultson</td>
+            <td>def@somemail.com</td>
+        </tr>
+        <tr class="table-primary">
+            <td>Primary</td>
+            <td>Joe</td>
+            <td>joe@example.com</td>
+        </tr>
+        <tr class="table-success">
+            <td>Success</td>
+            <td>Gates</td>
+            <td>bill@example.com</td>
+        </tr>
+        <tr class="table-danger">
+            <td>Danger</td>
+            <td>Jobs</td>
+            <td>steve@example.com</td>
+        </tr>
+        <tr class="table-info">
+            <td>Info</td>
+            <td>Musk</td>
+            <td>elon@example.com</td>
+        </tr>
+        <tr class="table-warning">
+            <td>Warning</td>
+            <td>Refs</td>
+            <td>bo@example.com</td>
+        </tr>
+        <tr class="table-active">
+            <td>Active</td>
+            <td>Activeson</td>
+            <td>act@example.com</td>
+        </tr>
+        <tr class="table-secondary">
+            <td>Secondary</td>
+            <td>Secondson</td>
+            <td>sec@example.com</td>
+        </tr>
+        <tr class="table-light">
+            <td>Light</td>
+            <td>Angie</td>
+            <td>angie@example.com</td>
+        </tr>
+        <tr class="table-dark">
+            <td>Dark</td>
+            <td>Bo</td>
+            <td>bo@example.com</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h1>表头颜色</h1>
+    <p>您可以使用任何上下文类只向表格标题添加背景颜色：</p>
+    <table class="table">
+        <thead class="table-dark">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Bill</td>
+            <td>Gates</td>
+            <td>bill@example.com</td>
+        </tr>
+        <tr>
+            <td>Steve</td>
+            <td>Jobs</td>
+            <td>steve@example.com</td>
+        </tr>
+        <tr>
+            <td>Elon</td>
+            <td>Musk</td>
+            <td>elon@example.com</td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="table">
+        <thead class="table-success">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Bill</td>
+            <td>Gates</td>
+            <td>bill@example.com</td>
+        </tr>
+        <tr>
+            <td>Steve</td>
+            <td>Jobs</td>
+            <td>steve@example.com</td>
+        </tr>
+        <tr>
+            <td>Elon</td>
+            <td>Musk</td>
+            <td>elon@example.com</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h1>小型表格</h1>
+    <p>.table-sm 类通过将单元格填充减半来使表格变小：</p>
+    <table class="table table-bordered table-sm">
+        <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Bill</td>
+            <td>Gates</td>
+            <td>bill@example.com</td>
+        </tr>
+        <tr>
+            <td>Steve</td>
+            <td>Jobs</td>
+            <td>steve@example.com</td>
+        </tr>
+        <tr>
+            <td>Elon</td>
+            <td>Musk</td>
+            <td>elon@example.com</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h1>响应式表格</h1>
+    <p>.table-responsive 类在需要时向表格添加滚动条（当它在水平方向上太大时）：</p>
+
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Country</th>
+                <th>Sex</th>
+                <th>Example</th>
+                <th>Example</th>
+                <th>Example</th>
+                <th>Example</th>
+                <th>Example</th>
+                <th>Example</th>
+                <th>Example</th>
+                <th>Example</th>
+                <th>Example</th>
+                <th>Example</th>
+                <th>Example</th>
+                <th>Example</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bill</td>
+                <td>Gates</td>
+                <td>19</td>
+                <td>Seatle</td>
+                <td>USA</td>
+                <td>Male</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h1>响应式表格</h1>
+    <p>.table-responsive-sm 类创建了一个响应式表格，它将在宽度小于 576px 的屏幕上水平滚动。</p>
+    <p>请调整浏览器窗口大小来查看效果。</p>
+    <div class="table-responsive-sm">
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Country</th>
+                <th>Sex</th>
+                <th>Example</th>
+                <th>Example</th>
+                <th>Example</th>
+                <th>Example</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bill</td>
+                <td>Gates</td>
+                <td>19</td>
+                <td>Seatle</td>
+                <td>USA</td>
+                <td>Male</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>

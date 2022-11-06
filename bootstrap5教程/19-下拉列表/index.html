@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>BS下拉列表</title>
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap的JS插件 -->
+    <script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+    <h2>下拉列表</h2>
+    <p>.dropdown 类指示下拉菜单。</p>
+    <p>请使用 .dropdown-menu 类来实际构建下拉菜单。</p>
+    <p>如需打开下拉菜单，请使用设置了 .dropdown-toggle 类和 data-toggle="dropdown" 属性的按钮或链接。</p>
+    <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+            Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">链接 1</a></li>
+            <li><a class="dropdown-item" href="#">链接 2</a></li>
+            <li><a class="dropdown-item" href="#">链接 3</a></li>
+        </ul>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>下拉菜单</h2>
+    <p>.dropdown-divider 类用于通过水平细边框分隔下拉菜单中的链接：</p>
+
+    <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+            Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">链接 1</a></li>
+            <li><a class="dropdown-item" href="#">链接 2</a></li>
+            <li><a class="dropdown-item" href="#">链接 3</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">另一个链接</a></li>
+        </ul>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>下拉菜单</h2>
+    <p>The .dropdown-header class is used to add headers inside the dropdown menu:</p>
+
+    <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+            Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+            <li><h5 class="dropdown-header">下拉标题 1</h5></li>
+            <li><a class="dropdown-item" href="#">链接 1</a></li>
+            <li><a class="dropdown-item" href="#">链接 2</a></li>
+            <li><a class="dropdown-item" href="#">链接 3</a></li>
+            <li><h5 class="dropdown-header">下拉标题 2</h5></li>
+            <li><a class="dropdown-item" href="#">另一个链接</a></li>
+        </ul>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>下拉菜单</h2>
+    <p>.active 类为活动链接添加蓝色背景色。</p>
+    <p>.disabled 类禁用下拉项（灰色文本颜色和悬停时的禁止停车标志）。</p>
+
+    <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+            Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">普通的</a></li>
+            <li><a class="dropdown-item active" href="#">活动的</a></li>
+            <li><a class="dropdown-item disabled" href="#">禁用的</a></li>
+        </ul>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>下拉菜单</h2>
+    <p>在下拉菜单旁边添加 .dropend 类，可右对齐下拉菜单。请注意，插入符号/箭头是自动添加的：</p>
+
+    <div class="dropdown dropend">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+            Dropend
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Normal</a></li>
+            <li><a class="dropdown-item active" href="#">Active</a></li>
+            <li><a class="dropdown-item disabled" href="#">Disabled</a></li>
+        </ul>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>下拉菜单</h2>
+    <p>在下拉菜单旁边添加 .dropstart 类，可左对齐下拉菜单。请注意，插入符号/箭头是自动添加的。另请注意，我们将下拉菜单向右浮动：</p>
+
+    <div class="dropdown dropstart text-end">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+            Dropstart
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">普通的</a></li>
+            <li><a class="dropdown-item active" href="#">活动的</a></li>
+            <li><a class="dropdown-item disabled" href="#">禁用的</a></li>
+        </ul>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>下拉菜单</h2>
+    <p>将 .dropdown-menu-end 类添加到 .dropdown-menu 可右对齐下拉菜单。</p>
+
+    <div class="dropdown dropdown-menu-end">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+            用于演示此例的宽的下拉按钮
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">链接 1</a></li>
+            <li><a class="dropdown-item" href="#">链接 2</a></li>
+            <li><a class="dropdown-item" href="#">链接 3</a></li>
+        </ul>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>下拉菜单</h2>
+    <p>.dropup 类使下拉菜单向上而不是向下展开：</p>
+    <p>必须有上拉菜单展开的空间。所以我们添加了一些额外的文本。额外的文本。额外的文本。额外的文本。额外的文本。额外的文本。</p>
+    <p>额外的文本。额外的文本。额外的文本。额外的文本。额外的文本。额外的文本。额外的文本。额外的文本。额外的文本。额外的文本。</p>
+
+    <div class="dropup">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+            上拉按钮
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">链接 1</a></li>
+            <li><a class="dropdown-item" href="#">链接 2</a></li>
+            <li><a class="dropdown-item" href="#">链接 3</a></li>
+        </ul>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>下拉菜单</h2>
+    <p>.dropdown-item-text 类用于向下拉列表添加纯文本，或用于链接的默认链接样式。</p>
+
+    <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+            Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">链接 1</a></li>
+            <li><a class="dropdown-item" href="#">链接 2</a></li>
+            <li><a class="dropdown-item" href="#">链接 3</a></li>
+            <li><a class="dropdown-item-text" href="#">文本链接</a></li>
+            <li><span class="dropdown-item-text">纯文本</span></li>
+        </ul>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>嵌套按钮组</h2>
+    <p>嵌套按钮组可创建下拉菜单：</p>
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary">华为</button>
+        <button type="button" class="btn btn-primary">大疆</button>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">小米</button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">手机</a></li>
+                <li><a class="dropdown-item" href="#">平板电脑</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>带下拉菜单的垂直按钮组</h2>
+    <div class="btn-group-vertical">
+        <button type="button" class="btn btn-primary">华为</button>
+        <button type="button" class="btn btn-primary">大疆</button>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">小米</button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">手机</a></li>
+                <li><a class="dropdown-item" href="#">平板电脑</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

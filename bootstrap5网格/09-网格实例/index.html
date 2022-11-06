@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>BS网格实例</title>
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap的JS插件 -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <style>
+        div{
+            background: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid mt-3">
+    <h2>三等分列</h2>
+    <p>在指定数量的元素上使用 .col 类，Bootstrap 将识别有多少元素（并创建等宽列）。在下面的例子中，我们使用了三个 col 元素，每个元素的宽度为 33.33%。</p>
+    <div class="row">
+        <div class="col bg-success">.col</div>
+        <div class="col bg-warning">.col</div>
+        <div class="col bg-success">.col</div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container-fluid mt-3">
+    <h2>三等分列</h2>
+    <p>您还可以使用数字来控制列宽。只需确保总和等于或小于 12（不需要使用所有 12 个可用列）：</p>
+    <div class="row">
+        <div class="col-4 bg-success">.col-4</div>
+        <div class="col-4 bg-warning">.col-4</div>
+        <div class="col-4 bg-success">.col-4</div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container-fluid mt-3">
+    <h2>三不等分列</h2>
+    <p>如需创建不相等的列，您必须使用数字。下例将创建 25%/50%/25% 的拆分：</p>
+    <div class="row">
+        <div class="col-3 bg-success">.col-3</div>
+        <div class="col-6 bg-warning">.col-6</div>
+        <div class="col-3 bg-success">.col-3</div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container-fluid mt-3">
+    <h2>设置一列宽度</h2>
+    <p>只设置一列的宽度就足够了，并让兄弟列在周围自动调整尺寸。下例将创建 25%/50%/25% 的拆分：</p>
+    <div class="row">
+        <div class="col bg-success">.col</div>
+        <div class="col-6 bg-warning">.col-6</div>
+        <div class="col bg-success">.col</div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container-fluid mt-3">
+    <h2>更多相等的列</h2>
+    <div class="row">
+        <div class="col bg-success">1 of 2</div>
+        <div class="col bg-warning">2 of 2</div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col bg-success">1 of 4</div>
+        <div class="col bg-warning">2 of 4</div>
+        <div class="col bg-success">3 of 4</div>
+        <div class="col bg-warning">4 of 4</div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col bg-success">1 of 6</div>
+        <div class="col bg-warning">2 of 6</div>
+        <div class="col bg-success">3 of 6</div>
+        <div class="col bg-warning">4 of 6</div>
+        <div class="col bg-success">5 of 6</div>
+        <div class="col bg-warning">6 of 6</div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container-fluid mt-3">
+    <h2>Row Cols</h2>
+    <p>.row-cols-* 类用于设置应彼此相邻出现的列数。</p>
+
+    <div class="row row-cols-1">
+        <div class="col bg-success">1 of 2</div>
+        <div class="col bg-warning">2 of 2</div>
+    </div>
+    <br>
+    <div class="row row-cols-2">
+        <div class="col bg-success">1 of 4</div>
+        <div class="col bg-warning">2 of 4</div>
+        <div class="col bg-success">3 of 4</div>
+        <div class="col bg-warning">4 of 4</div>
+    </div>
+    <br>
+    <div class="row row-cols-3">
+        <div class="col bg-success">1 of 6</div>
+        <div class="col bg-warning">2 of 6</div>
+        <div class="col bg-success">3 of 6</div>
+        <div class="col bg-warning">4 of 6</div>
+        <div class="col bg-success">5 of 6</div>
+        <div class="col bg-warning">6 of 6</div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container-fluid mt-3">
+    <h2>更多不等列</h2>
+    <div class="row">
+        <div class="col-8 bg-success">1 of 2</div>
+        <div class="col-4 bg-warning">2 of 2</div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-2 bg-success">1 of 4</div>
+        <div class="col-2 bg-warning">2 of 4</div>
+        <div class="col-2 bg-success">3 of 4</div>
+        <div class="col-6 bg-warning">4  of 4</div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-4 bg-success">1 of 4</div>
+        <div class="col-6 bg-warning">2 of 4</div>
+        <div class="col bg-success">3 of 4</div>
+        <div class="col bg-warning">4  of 4</div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container-fluid mt-3">
+    <h2>等高</h2>
+    <p>如果一列比另一列高（由于文本或 CSS 高度），其余的将跟随：</p>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col bg-success">
+            <p>话说天下大势，分久必合，合久必分。周末七国分争，并入于秦。及秦灭之后，楚、汉分争，又并入于汉。汉朝自高祖斩白蛇而起义，一统天下，后来光武中兴，传至献帝，遂分为三国。推其致乱之由，殆始于桓、灵二帝。桓帝禁锢善类，崇信宦官。及桓帝崩，灵帝即位，大将军窦武、太傅陈蕃共相辅佐。时有宦官曹节等弄权，窦武、陈蕃谋诛之，机事不密，反为所害，中涓自此愈横。</p>
+
+            <p>建宁二年四月望日，帝御温德殿。方升座，殿角狂风骤起。只见一条大青蛇，从梁上飞将下来，蟠于椅上。帝惊倒，左右急救入宫，百官俱奔避。须臾，蛇不见了。忽然大雷大雨，加以冰雹，落到半夜方止，坏却房屋无数。建宁四年二月，洛阳地震；又海水泛溢，沿海居民，尽被大浪卷入海中。光和元年，雌鸡化雄。六月朔，黑气十余丈，飞入温德殿中。秋七月，有虹现于玉堂；五原山岸，尽皆崩裂。种种不祥，非止一端。帝下诏问群臣以灾异之由，议郎蔡邕上疏，以为蜺堕鸡化，乃妇寺干政之所致，言颇切直。帝览奏叹息，因起更衣。曹节在后窃视，悉宣告左右；遂以他事陷邕于罪，放归田里。后张让、赵忠、封谞、段珪、曹节、侯览、蹇硕、程旷、夏恽、郭胜十人朋比为奸，号为“十常侍”。帝尊信张让，呼为“阿父”。朝政日非，以致天下人心思乱，盗贼蜂起。</p>
+        </div>
+        <div class="col bg-warning">.col</div>
+        <div class="col bg-success">.col</div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container-fluid mt-3">
+    <h2>嵌套的列</h2>
+    <p>在其他列中添加列：</p>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-8 bg-warning p-4">
+            .col-8
+            <div class="row">
+                <div class="col-6 bg-light p-2">.col-6</div>
+                <div class="col-6 bg-secondary p-2">.col-6</div>
+            </div>
+        </div>
+        <div class="col-4 bg-success p-4">.col-4</div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container-fluid mt-3">
+    <h1>堆叠到水平</h1>
+    <p>请调整浏览器窗口大小来查看效果。</p>
+    <p>此例演示了在小型、中型、大型和超大型设备上的 75%/25% 拆分。在超小型设备上，它将堆叠（100% 宽度）。</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-9 bg-success">col-sm-9</div>
+            <div class="col-sm-3 bg-warning">col-sm-3</div>
+        </div>
+    </div>
+    <br>
+    <p>此例演示了在小型、中型、大型和超大型设备上的 33% 拆分。在超小型设备上，它将堆叠（100% 宽度）。</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm bg-success">col-sm</div>
+            <div class="col-sm bg-warning">col-sm</div>
+            <div class="col-sm bg-success">col-sm</div>
+        </div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container-fluid mt-3">
+    <h1>Mix 和 Match</h1>
+    <p>请调整浏览器窗口大小来查看效果。</p>
+    <p>此例演示了在超小型设备上的 50%/50% 拆分和在更大设备上的 75%/25% 拆分。</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 col-sm-9 bg-success">col-6 col-sm-9</div>
+            <div class="col-6 col-sm-3 bg-warning">col-6 col-sm-3</div>
+        </div>
+    </div>
+    <br>
+    <p>此例演示了在超小型、小型和中型设备上的 58%/42% 拆分以及在大型和超大型设备上的 66.3%/33.3% 拆分。</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-7 col-lg-8 bg-success">col-7 col-lg-8</div>
+            <div class="col-5 col-lg-4 bg-warning">col-5 col-lg-4</div>
+        </div>
+    </div>
+    <br>
+    <p>此例演示了小型设备上的 25%/75% 拆分、中型设备上的 50%/50% 拆分以及大型和超大设备上的 33%/66% 拆分。在超小型设备上，它将自动堆叠 (100%)。</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-6 col-lg-4 bg-success">col-sm-3 col-md-6 col-lg-4</div>
+            <div class="col-sm-9 col-md-6 col-lg-8 bg-warning">col-sm-9 col-md-6 col-lg-8</div>
+        </div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container-fluid mt-3">
+    <h1>无 gutter</h1>
+    <p>如需更改列之间的间距（额外的空间），请使用任何 .g-1|2|3|4|5 类（.g-4 是默认值）。</p>
+    <p>如需完全删除装订线（gutter），请使用 .g-0：</p>
+
+    <div class="container-fluid">
+        <div class="row g-0">
+            <div class="col-3 bg-success">
+                世界自然基金会（WWF），成立于1961年4月29日，其标志是一只大熊猫。世界自然基金会最终目标是制止并最终扭转地球自然环境的加速恶化，并帮助创立一个人与自然和谐共处的未来。
+            </div>
+            <div class="col-9 bg-warning">
+                1980年，WWF正式来到中国，受中国政府邀请来华开展大熊猫及其栖息地的保护工作，1996年在北京设立了办事处。发展至今，WWF共在中国八个城市建立办公室，拥有100多名员工，开展了包括物种、森林、淡水与海洋、能源与气候变化、环境教育和野生物贸易等多方面的工作。WWF中国的主要任务，就是为实现减少中国对全球的生态影响和改善人民生计的双重目标而提供解决方案。
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

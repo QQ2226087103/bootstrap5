@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>BS网格 Large</title>
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap的JS插件 -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <style>
+        div{
+            background: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid mt-3">
+    <h1>大型网格</h1>
+    <p>下例将导致在小型设备上拆分 25%/75%，在中型设备上拆分 50%/50%，在大型、xlarge 和 xxlarge 设备上拆分 33%/66%。在超小型设备上，它将自动堆叠 (100%)。</p>
+    <p>请调整浏览器窗口大小来查看效果。</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-6 col-lg-4 bg-primary text-white">
+                世界自然基金会（WWF），成立于1961年4月29日，其标志是一只大熊猫。世界自然基金会最终目标是制止并最终扭转地球自然环境的加速恶化，并帮助创立一个人与自然和谐共处的未来。
+            </div>
+            <div class="col-sm-9 col-md-6 col-lg-8 bg-dark text-white">
+                1980年，WWF正式来到中国，受中国政府邀请来华开展大熊猫及其栖息地的保护工作，1996年在北京设立了办事处。发展至今，WWF共在中国八个城市建立办公室，拥有100多名员工，开展了包括物种、森林、淡水与海洋、能源与气候变化、环境教育和野生物贸易等多方面的工作。WWF中国的主要任务，就是为实现减少中国对全球的生态影响和改善人民生计的双重目标而提供解决方案。
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container-fluid mt-3">
+    <h1>大型网格</h1>
+    <p>下例将在 large、xlarge 和 xxlarge 设备（992px 及以上）上产生 50%/50% 的拆分。在中型、小型和超小型设备上，它将自动堆叠（100%）。</p>
+    <p>请调整浏览器窗口大小来查看效果。</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 bg-primary text-white">
+                世界自然基金会（WWF），成立于1961年4月29日，其标志是一只大熊猫。世界自然基金会最终目标是制止并最终扭转地球自然环境的加速恶化，并帮助创立一个人与自然和谐共处的未来。
+            </div>
+            <div class="col-lg-6 bg-dark text-white">
+                1980年，WWF正式来到中国，受中国政府邀请来华开展大熊猫及其栖息地的保护工作，1996年在北京设立了办事处。发展至今，WWF共在中国八个城市建立办公室，拥有100多名员工，开展了包括物种、森林、淡水与海洋、能源与气候变化、环境教育和野生物贸易等多方面的工作。WWF中国的主要任务，就是为实现减少中国对全球的生态影响和改善人民生计的双重目标而提供解决方案。
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container-fluid mt-3">
+    <h1>响应式自动布局列</h1>
+    <p>在 Bootstrap 5 中，有一种简单的方法可以为所有设备创建等宽的列：只需从 .col-lg-* 中删除数字，并仅在 col 元素上使用 .col-lg 类。 Bootstrap 将识别有多少列，并且每列将获得相同的宽度。</p>
+    <p>如果屏幕尺寸小于 992px，列将水平堆叠：</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg bg-primary text-white">1 of 2</div>
+            <div class="col-lg bg-dark text-white">2 of 2</div>
+        </div>
+    </div>
+    <br>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg bg-primary text-white">1 of 4</div>
+            <div class="col-lg bg-dark text-white">2 of 4</div>
+            <div class="col-lg bg-primary text-white">3 of 4</div>
+            <div class="col-lg bg-dark text-white">4 of 4</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

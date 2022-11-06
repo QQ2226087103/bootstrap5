@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>BS实用工具</title>
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap的JS插件 -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <style>
+        span {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin: 6px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-3">
+    <h2>边框</h2>
+    <p>使用边框类为元素添加或删除边框：</p>
+
+    <span class="border"></span>
+    <span class="border border-0"></span>
+    <span class="border border-top-0"></span>
+    <span class="border border-end-0"></span>
+    <span class="border border-bottom-0"></span>
+    <span class="border border-start-0"></span>
+    <br>
+
+    <span class="border-top"></span>
+    <span class="border-end"></span>
+    <span class="border-bottom"></span>
+    <span class="border-start"></span>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>边框宽度</h2>
+    <p>使用 .border-1 到 .border-5 来改变边框的宽度：</p>
+
+    <span class="border border-1"></span>
+    <span class="border border-2"></span>
+    <span class="border border-3"></span>
+    <span class="border border-4"></span>
+    <span class="border border-5"></span>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>边框颜色</h2>
+    <p>请使用任意上下文边框颜色类向边框添加颜色：</p>
+    <span class="border border-primary"></span>
+    <span class="border border-secondary"></span>
+    <span class="border border-success"></span>
+    <span class="border border-danger"></span>
+    <span class="border border-warning"></span>
+    <span class="border border-info"></span>
+    <span class="border border-light"></span>
+    <span class="border border-dark"></span>
+    <span class="border border-white"></span>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>边框圆角</h2>
+    <p>请使用 rounded 类为元素添加圆角：</p>
+    <span class="rounded"></span>
+    <span class="rounded-top"></span>
+    <span class="rounded-end"></span>
+    <span class="rounded-bottom"></span>
+    <span class="rounded-start"></span>
+    <span class="rounded-circle"></span>
+    <span class="rounded-pill" style="width:130px"></span>
+    <span class="rounded-0"></span>
+    <span class="rounded-1"></span>
+    <span class="rounded-2"></span>
+    <span class="rounded-3"></span>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>浮动和清除浮动</h2>
+    <p>使用 .float-end 类向右浮动元素，或使用 .float-start 向左浮动，并使用 .clearfix 类清除浮动：</p>
+    <div class="clearfix">
+        <span class="float-start">向左浮动</span>
+        <span class="float-end">向右浮动</span>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>响应式浮动 	</h2>
+    <p>根据屏幕宽度向左或向右浮动元素，使用响应式浮动类 (.float-*-left|right)：</p>
+    <p>请调整浏览器窗口大小来查看效果。</p>
+    <div class="clearfix">
+        <div class="float-sm-end">在小型屏幕或更宽的屏幕上向右浮动</div><br>
+        <div class="float-md-end">在中型屏幕或更宽的屏幕上向右浮动</div><br>
+        <div class="float-lg-end">在大型屏幕或更宽的屏幕上向右浮动</div><br>
+        <div class="float-xl-end">在超大型屏幕或更宽的屏幕上向右浮动</div><br>
+        <div class="float-xxl-end">在特大型屏幕或更宽的屏幕上向右浮动</div><br>
+        <div class="float-none">不进行浮动</div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h1>水平居中</h1>
+    <p>使用 .mx-auto 类居中元素：</p>
+    <div class="mx-auto bg-warning" style="width:150px">居中</div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h1>宽度 Utility</h1>
+    <p>使用 w-* 类（.w-25、.w-50、.w-75、.w-100、.mw-auto、.mw-100）设置元素的宽度：</p>
+    <div class="w-25 bg-warning">宽度 25%</div>
+    <div class="w-50 bg-warning">宽度 50%</div>
+    <div class="w-75 bg-warning">宽度 75%</div>
+    <div class="w-100 bg-warning">宽度 100%</div>
+    <div class="w-auto bg-warning">自动宽度</div>
+    <div class="mw-100 bg-warning">最大宽度 100%</div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h1>高度 Utility</h1>
+    <p>使用 h-* 类（.h-25、.h-50、.h-75、.h-100、.mh-auto、.mh-100）设置元素的高度：</p>
+    <div style="height:200px;background-color:#ddd">
+        <div class="h-25 d-inline-block p-2 bg-warning">高度 25%</div>
+        <div class="h-50 d-inline-block p-2 bg-warning">高度 50%</div>
+        <div class="h-75 d-inline-block p-2 bg-warning">高度 75%</div>
+        <div class="h-100 d-inline-block p-2 bg-warning">高度 100%</div>
+        <div class="h-auto d-inline-block p-2 bg-warning">自动高度</div>
+        <div class="mh-100 d-inline-block p-2 bg-warning" style="height:500px">最大高度 100%</div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h1>间距 Utility</h1>
+    <p>使用 {property. {Sides} - {breakpoint} - {size} 类设置元素的间距。如果您希望填充或边距适用于所有屏幕尺寸，请省略断点。</p>
+    <div class="pt-4 bg-warning">我只有上内边距 (1.5rem)</div>
+    <div class="p-5 bg-success">我在所有边都有内边距 (3rem)</div>
+    <div class="m-5 pb-5 bg-info">我在所有边都有外边距 (3rem) 和下内边距 (3rem)</div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h1>阴影</h1>
+    <p>请使用 shadow- 类为元素添加阴影：</p>
+    <div class="shadow-none p-4 mb-4 bg-light">没有阴影</div>
+    <div class="shadow-sm p-4 mb-4 bg-white">小型阴影</div>
+    <div class="shadow p-4 mb-4 bg-white">默认阴影</div>
+    <div class="shadow-lg p-4 mb-4 bg-white">大型阴影</div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h1>垂直对齐</h1>
+    <p>请使用 align- 类更改元素的对齐方式（仅适用于 inline、 inline-block、inline-table 和表格单元格元素）：</p>
+    <span class="align-baseline">baseline</span>
+    <span class="align-top">top</span>
+    <span class="align-middle">middle</span>
+    <span class="align-bottom">bottom</span>
+    <span class="align-text-top">text-top</span>
+    <span class="align-text-bottom">text-bottom</span>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>Aspect Ratio</h2>
+    <p>Create a responsive video and scale it nicely to the parent element.</p>
+
+    <h2>Aspect ratio 1:1</h2>
+    <div class="ratio ratio-1x1">
+        <iframe src="../../video/shanghai.mp4"></iframe>
+    </div>
+    <br>
+
+    <h2>Aspect ratio 4:3</h2>
+    <div class="ratio ratio-4x3">
+        <iframe src="../../video/shanghai.mp4"></iframe>
+    </div>
+    <br>
+
+    <h2>Aspect ratio 16:9</h2>
+    <div class="ratio ratio-16x9">
+        <iframe src="../../video/shanghai.mp4"></iframe>
+    </div>
+    <br>
+
+    <h2>Aspect ratio 21:9</h2>
+    <div class="ratio ratio-21x9">
+        <iframe src="../../video/shanghai.mp4"></iframe>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h1>可见性</h1>
+    <p>使用 .visible 或 .invisible 类可控制元素的可见性：</p>
+    <p><b>注释：</b>这些类不会更改 CSS display 值。它们只添加 visibility:visible 或 visibility:hidden。</p>
+    <div class="visible bg-success">我是可见的。</div>
+    <div class="invisible bg-warning">我是不可见的。</div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h1>关闭图标</h1>
+    <p>请使用 .btn-close 类可设置关闭图标的样式。通常用于警告框和模态。</p>
+    <div class="clearfix">
+        <button type="button" class="close">×</button>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>屏幕阅读器</h2>
+    <p>使用 .visually-hidden 类可在所有设备上隐藏元素，屏幕阅读器除外：</p>
+    <span class="visually-hidden">除了屏幕阅读器，我将隐藏在所有屏幕上。</span>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h1>上下文颜色</h1>
+    <p>请使用上下文类来提供“由颜色表达的某种意义”。</p>
+    <p class="text-muted">此文本已静音。</p>
+    <p class="text-primary">此文字很重要。</p>
+    <p class="text-success">此文本表示成功。</p>
+    <p class="text-info">此文字代表了一些信息。</p>
+    <p class="text-warning">此文本表示警告。</p>
+    <p class="text-danger">此文字代表危险。</p>
+    <p class="text-secondary">次要文本。</p>
+    <p class="text-dark">此文字为深灰色。</p>
+    <p class="text-body">默认主体颜色（通常为黑色）。</p>
+    <p class="text-light">此文本为浅灰色（在白色背景上）。</p>
+    <p class="text-white">这段文字是白色的（在白色背景上）。</p>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>上下文链接颜色</h2>
+    <a href="#" class="text-muted">静音链接</a>
+    <a href="#" class="text-primary">主要链接</a>
+    <a href="#" class="text-success">成功链接</a>
+    <a href="#" class="text-info">信息链接</a>
+    <a href="#" class="text-warning">警告链接</a>
+    <a href="#" class="text-danger">危险链接</a>
+    <a href="#" class="text-secondary">次要链接</a>
+    <a href="#" class="text-dark">暗灰链接</a>
+    <a href="#" class="text-body">主体/黑色链接</a>
+    <a href="#" class="text-light">浅灰链接</a>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h1>不透明度文本颜色</h1>
+    <p>请使用 .text-black-50 或 .text-white-50 类为黑色或白色文本添加 50% 的不透明度：</p>
+    <p class="text-black-50">白色背景上不透明度为 50% 的黑色文本</p>
+    <p class="text-white-50 bg-dark">黑色背景上不透明度为 50% 的白色文本</p>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h1>上下文背景</h1>
+    <p>请使用上下文背景类来提供“由颜色表达的某种意义”。</p>
+    <p>请注意，如果您想要不同的文本颜色，您还可以添加 .text-* 类：</p>
+    <p class="bg-primary text-white">此文本很重要。</p>
+    <p class="bg-success text-white">此文本表示成功。</p>
+    <p class="bg-info text-white">此文本代表了一些信息。</p>
+    <p class="bg-warning text-white">此文本表示警告。</p>
+    <p class="bg-danger text-white">此文本代表危险。</p>
+    <p class="bg-secondary text-white">次要背景颜色。</p>
+    <p class="bg-dark text-white">深灰色背景颜色。</p>
+    <p class="bg-light text-dark">浅灰色背景色。</p>
+</div>
+
+</body>
+</html>

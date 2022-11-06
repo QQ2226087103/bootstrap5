@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>BS进度条</title>
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap的JS插件 -->
+    <script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+    <h2>基础进度条</h2>
+    <p>如需创建默认进度条，请将 .progress 类添加到容器元素并将 progress-bar 类添加到其子元素。请使用 CSS width 属性设置进度条的宽度：</p>
+    <div class="progress">
+        <div class="progress-bar" style="width:70%"></div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>进度条高度</h2>
+    <p>进度条的高度默认为 1rem（通常为 16px）。请使用 CSS height 属性来更改它。</p>
+    <div class="progress" style="height:10px">
+        <div class="progress-bar" style="width:40%;height:10px"></div>
+    </div>
+    <br>
+    <div class="progress" style="height:20px">
+        <div class="progress-bar" style="width:50%;height:20px"></div>
+    </div>
+    <br>
+    <div class="progress" style="height:30px">
+        <div class="progress-bar" style="width:60%;height:30px"></div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>带标签的进度条</h2>
+    <div class="progress">
+        <div class="progress-bar" style="width:70%">70%</div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>彩色进度条</h2>
+    <p>请使用任何上下文颜色类来更改进度条的颜色：</p>
+    <!-- Blue -->
+    <div class="progress">
+        <div class="progress-bar" style="width:10%"></div>
+    </div><br>
+
+    <!-- Green -->
+    <div class="progress">
+        <div class="progress-bar bg-success" style="width:20%"></div>
+    </div><br>
+
+    <!-- Turquoise -->
+    <div class="progress">
+        <div class="progress-bar bg-info" style="width:30%"></div>
+    </div><br>
+
+    <!-- Orange -->
+    <div class="progress">
+        <div class="progress-bar bg-warning" style="width:40%"></div>
+    </div><br>
+
+    <!-- Red -->
+    <div class="progress">
+        <div class="progress-bar bg-danger" style="width:50%"></div>
+    </div><br>
+
+    <!-- White -->
+    <div class="progress border">
+        <div class="progress-bar bg-white" style="width:60%"></div>
+    </div><br>
+
+    <!-- Grey -->
+    <div class="progress">
+        <div class="progress-bar bg-secondary" style="width:70%"></div>
+    </div><br>
+
+    <!-- Light Grey -->
+    <div class="progress border">
+        <div class="progress-bar bg-light" style="width:80%"></div>
+    </div><br>
+
+    <!-- Dark Grey -->
+    <div class="progress">
+        <div class="progress-bar bg-dark" style="width:90%"></div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>条纹进度条</h2>
+    <p>请使用 .progress-bar-striped 类向进度条添加条纹：</p>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped" style="width:30%"></div>
+    </div>
+    <br>
+    <div class="progress">
+        <div class="progress-bar bg-success progress-bar-striped" style="width:40%"></div>
+    </div>
+    <br>
+    <div class="progress">
+        <div class="progress-bar bg-info progress-bar-striped" style="width:50%"></div>
+    </div>
+    <br>
+    <div class="progress">
+        <div class="progress-bar bg-warning progress-bar-striped" style="width:60%"></div>
+    </div>
+    <br>
+    <div class="progress">
+        <div class="progress-bar bg-danger progress-bar-striped" style="width:70%"></div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>进度条动画</h2>
+    <p>请添加 .progress-bar-animated 类来制作进度条动画：</p>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:40%"></div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>多个进度条</h2>
+    <p>通过将多个进度条放入同一个 class="progress" 的 div，创建一个堆叠进度条：</p>
+    <div class="progress">
+        <div class="progress-bar bg-success" style="width:40%">
+            空闲空间
+        </div>
+        <div class="progress-bar bg-warning" style="width:10%">
+            警告
+        </div>
+        <div class="progress-bar bg-danger" style="width:20%">
+            危险
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

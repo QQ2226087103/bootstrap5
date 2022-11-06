@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>BS分页</title>
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap的JS插件 -->
+    <script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+    <h2>分页</h2>
+    <p>如需创建基本分页，请将 .pagination 类添加到 ul 元素。然后将 .page-item 添加到每个 li 元素，并将 .page-link 类添加到 li 中的每个链接：</p>
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">上一页</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">下一页</a></li>
+    </ul>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>分页 - 活动状态</h2>
+    <p>添加类 .active 可让用户知道他/她位于哪张页面上：</p>
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">上一页</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">下一页</a></li>
+    </ul>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>分页 - 禁用状态</h2>
+    <p>如果某个页面由于某种原因被禁用，则请添加类 .disabled：</p>
+    <ul class="pagination">
+        <li class="page-item disabled"><a class="page-link" href="#">上一页</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">下一页</a></li>
+    </ul>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>分页大小</h2>
+    <p>请为较大的块添加类 .pagination-lg 或为较小的块添加 .pagination-sm 类。</p>
+
+    <p>大型：</p>
+    <ul class="pagination pagination-lg">
+        <li class="page-item"><a class="page-link" href="#">上一页</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">下一页</a></li>
+    </ul>
+
+    <p>默认：</p>
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">上一页</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">下一页</a></li>
+    </ul>
+
+    <p>小型：</p>
+    <ul class="pagination pagination-sm">
+        <li class="page-item"><a class="page-link" href="#">上一页</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">下一页</a></li>
+    </ul>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>分页 - 对齐</h2>
+    <p>请使用 utility 类来更改分页的对齐方式：</p>
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">上一页</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">下一页</a></li>
+    </ul>
+    <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">上一页</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">下一页</a></li>
+    </ul>
+    <ul class="pagination justify-content-end">
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">上一页</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+        <li class="page-item"><a class="page-link" href="javascript:void(0);">下一页</a></li>
+    </ul>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>分页 - 面包屑</h2>
+    <p>.breadcrumb 和 .breadcrumb-item 类规定当前页面在导航层次结构中的位置：</p>
+    <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">照片</a></li>
+        <li class="breadcrumb-item"><a href="#">2019年夏季</a></li>
+        <li class="breadcrumb-item"><a href="#">意大利</a></li>
+        <li class="breadcrumb-item active">罗马</li>
+    </ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>BS卡片</title>
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap的JS插件 -->
+    <script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+    <h2>基础的卡片</h2>
+    <div class="card">
+        <div class="card-body">基础的卡片</div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>卡片页眉和页脚</h2>
+    <div class="card">
+        <div class="card-header">页眉</div>
+        <div class="card-body">内容</div>
+        <div class="card-footer">页脚</div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>设置上下文类的</h2>
+    <div class="card">
+        <div class="card-body">Basic card</div>
+    </div>
+    <br>
+    <div class="card bg-primary text-white">
+        <div class="card-body">Primary card</div>
+    </div>
+    <br>
+    <div class="card bg-success text-white">
+        <div class="card-body">Success card</div>
+    </div>
+    <br>
+    <div class="card bg-info text-white">
+        <div class="card-body">Info card</div>
+    </div>
+    <br>
+    <div class="card bg-warning text-white">
+        <div class="card-body">Warning card</div>
+    </div>
+    <br>
+    <div class="card bg-danger text-white">
+        <div class="card-body">Danger card</div>
+    </div>
+    <br>
+    <div class="card bg-secondary text-white">
+        <div class="card-body">Secondary card</div>
+    </div>
+    <br>
+    <div class="card bg-dark text-white">
+        <div class="card-body">Dark card</div>
+    </div>
+    <br>
+    <div class="card bg-light text-dark">
+        <div class="card-body">Light card</div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>卡片标题、文本和链接</h2>
+    <p>请使用 .card-title 将卡片标题添加到任意标题元素。如果 p 元素是 .card-body 中的最后一个子元素（或唯一一个子元素），则 .card-text 类用于移除 p 元素的底部边距。.card-link 类为任意链接添加蓝色和悬停效果。</p>
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">卡片标题</h4>
+            <p class="card-text">一些实例文本。一些实例文本。</p>
+            <a href="#" class="card-link">卡片链接</a>
+            <a href="#" class="card-link">另一个链接</a>
+        </div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>卡片图像</h2>
+    <p>图像在上方 (card-img-top)：</p>
+    <div class="card" style="width:400px">
+        <img class="card-img-top" src="../../images/avatar.png" alt="Card image" style="width:100%">
+        <div class="card-body">
+            <h4 class="card-title">Bill Gates</h4>
+            <p class="card-text">Bill Gates 是一位程序员和工程师。一些示例文本。一些示例文本。</p>
+            <a href="#" class="btn btn-primary">查看个人资料</a>
+        </div>
+    </div>
+    <br>
+
+    <p>图像在下方 (card-img-bottom)：</p>
+    <div class="card" style="width:400px">
+        <div class="card-body">
+            <h4 class="card-title">Steve Jobs</h4>
+            <p class="card-text">Steve Jobs 是一位程序员和工程师。一些示例文本。一些示例文本。</p>
+            <a href="#" class="btn btn-primary">查看个人资料</a>
+        </div>
+        <img class="card-img-bottom" src="../../images/avatar.png" alt="Card image" style="width:100%">
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>卡片图像叠加</h2>
+    <p>将图像转换为卡片背景并使用 .card-img-overlay 在图像顶部添加文本：</p>
+    <div class="card img-fluid" style="width:499px">
+        <img class="card-img-top" src="../../images/avatar.png" alt="Card image" style="width:100%">
+        <div class="card-img-overlay">
+            <h4 class="card-title">Bill Gates</h4>
+            <p class="card-text">一些示例文本。一些示例文本。一些示例文本。一些示例文本。一些示例文本。一些示例文本。一些示例文本。一些示例文本。一些示例文本。一些示例文本。一些示例文本。一些示例文本。</p>
+            <a href="#" class="btn btn-primary">查看个人资料</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

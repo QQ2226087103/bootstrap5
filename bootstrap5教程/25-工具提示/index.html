@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>BS工具提示</title>
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap的JS插件 -->
+    <script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+    <h3>工具提示实例</h3>
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="太棒了！">
+        请悬停在我上面！
+    </button>
+</div>
+
+<script>
+    // 初始化工具提示
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+</script>
+
+<hr/>
+
+<div class="container mt-3">
+    <h3>工具提示定位</h3>
+    <p>data-bs-placement 属性指定工具提示的位置。</p>
+    <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="太棒了！">Top</a>
+    <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="太棒了！">Bottom</a>
+    <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="太棒了！">Left</a>
+    <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="太棒了！">Right</a>
+</div>
+
+<script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+</script>
+
+</body>
+</html>

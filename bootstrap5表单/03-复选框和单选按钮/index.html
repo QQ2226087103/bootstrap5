@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>BS复选框和单选按钮</title>
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap的JS插件 -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <style>
+        div{
+            background: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-3">
+    <h2>复选框</h2>
+    <p>如需设置复选框的样式，请使用带有 .form-check 类的容器元素，并将 .form-check-label 添加到标签，并将 .form-check-input 添加到 type="checkbox" 的输入控件中。</p>
+    <p>下面的表格包含三个复选框。默认选中第一个选项，禁用最后一个选项：</p>
+    <form action="/action_page.php">
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+            <label class="form-check-label" for="check1">选项 1</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+            <label class="form-check-label" for="check2">选项 2</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" disabled>
+            <label class="form-check-label">选项 3</label>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">提交</button>
+    </form>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>单选按钮</h2>
+    <p>下面的表单包含三个单选按钮。默认选中第一项，禁用最后一项：</p>
+    <form action="/action_page.php">
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+            <label class="form-check-label" for="radio1">选项 1</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+            <label class="form-check-label" for="radio2">选项 2</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" disabled>
+            <label class="form-check-label">选项 3</label>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">提交</button>
+    </form>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>拨动开关</h2>
+    <p>请尝试在切换和不切换开关的情况下提交表单。</p>
+    <form action="/action_page.php">
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+            <label class="form-check-label" for="mySwitch">深色模式</label>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">提交</button>
+    </form>
+</div>
+
+</body>
+</html>

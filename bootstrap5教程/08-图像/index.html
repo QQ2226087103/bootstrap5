@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>BS图像</title>
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap的JS插件 -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <style>
+        div{
+            background: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-3">
+    <h2>圆角</h2>
+    <p>.rounded 类为图像添加圆角</p>
+    <img src="../../images/tulip.jpg" class="rounded" alt="Cinque Terre">
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>圆形</h2>
+    <p>.rounded-circle 类将图像塑造为圆形</p>
+    <img src="../../images/tulip.jpg" class="rounded-circle" alt="Cinque Terre">
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>缩略图</h2>
+    <p>.img-thumbnail 类将图像塑造为缩略图（带边框）</p>
+    <img src="../../images/tulip.jpg" class="img-thumbnail" alt="Cinque Terre">
+</div>
+
+<hr/>
+
+<div class="container mt-3" style="width: 2000px;height: 400px;">
+    <h2>对齐图像</h2>
+    <p>使用 .float-start 类将图像向左浮动，或使用 .float-end 向右浮动</p>
+    <img src="../../images/tulip.jpg" class="float-start" alt="居左">
+    <img src="../../images/tulip-2.jpg" class="float-end" alt="居右">
+</div>
+
+<hr/>
+
+
+<div class="container mt-3">
+    <h2>居中图像</h2>
+    <p>为了使图像居中，我们通过向图像添加了 utility 类 .mx-auto (margin:auto) 和 .d-block (display:block)</p>
+    <img src="../../images/tulip.jpg" class="mx-auto d-block" alt="居中">
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>响应式图像</h2>
+    <p>.img-fluid 类使图像可以很好地缩放到父元素（请调整浏览器窗口的大小来查看效果）：</p>
+    <img src="../../images/tulip.jpg" class="img-fluid" alt="Park">
+</div>
+
+</body>
+</html>

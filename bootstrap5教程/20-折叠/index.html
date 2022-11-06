@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>BS折叠</title>
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap的JS插件 -->
+    <script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+    <h2>简单的折叠</h2>
+    <p>单击按钮可在显示和隐藏内容之间切换。</p>
+    <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">春日</button>
+    <div id="demo" class="collapse">
+        <p>胜日寻芳泗水滨，无边光景一时新。</p>
+        <p>等闲识得东风面，万紫千红总是春。</p>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>简单的折叠</h2>
+    <a href="#demo" class="btn btn-primary" data-bs-toggle="collapse">春日</a>
+<!--    <div id="demo" class="collapse">-->
+<!--        <p>胜日寻芳泗水滨，无边光景一时新。</p>-->
+<!--        <p>等闲识得东风面，万紫千红总是春。</p>-->
+<!--    </div>-->
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>默认显示折叠的内容</h2>
+    <p>在 collapse 类旁边添加 show 类，可默认显示内容。</p>
+    <p>单击按钮可在显示和隐藏内容之间切换。</p>
+    <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">春日</button>
+<!--    <div id="demo" class="collapse show">-->
+<!--        <p>胜日寻芳泗水滨，无边光景一时新。</p>-->
+<!--        <p>等闲识得东风面，万紫千红总是春。</p>-->
+<!--    </div>-->
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>手风琴实例</h2>
+    <p><strong>注释：</strong><code>data-bs-parent</code> 属性确保在显示可折叠项目之一时，将关闭指定父项下的所有可折叠元素。</p>
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                    可折叠组项目 #1
+                </a>
+            </div>
+            <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                <div class="card-body">
+                    <h3>春日</h3>
+                    <p>胜日寻芳泗水滨，无边光景一时新。</p>
+                    <p>等闲识得东风面，万紫千红总是春。</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                    可折叠组项目 #2
+                </a>
+            </div>
+            <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                    <h3>初夏绝句</h3>
+                    <p>纷纷红紫已成尘，布谷声中夏令新。</p>
+                    <p>夹路桑麻行不尽，始知身是太平人。</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                    可折叠组项目 #3
+                </a>
+            </div>
+            <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                    <h3>山行</h3>
+                    <p>远上寒山石径斜，白云生处有人家。</p>
+                    <p>停车坐爱枫林晚，霜叶红于二月花。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr/>
+
+
+
+</body>
+</html>

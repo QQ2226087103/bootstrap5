@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>BS按钮</title>
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap的JS插件 -->
+    <script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+    <h2>按钮样式</h2>
+    <button type="button" class="btn">基础</button>
+    <button type="button" class="btn btn-primary">主要</button>
+    <button type="button" class="btn btn-secondary">次要</button>
+    <button type="button" class="btn btn-success">成功</button>
+    <button type="button" class="btn btn-info">信息</button>
+    <button type="button" class="btn btn-warning">警告</button>
+    <button type="button" class="btn btn-danger">危险</button>
+    <button type="button" class="btn btn-dark">深色</button>
+    <button type="button" class="btn btn-light">浅色</button>
+    <button type="button" class="btn btn-link">链接</button>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>Button Elements</h2>
+    <a href="#" class="btn btn-success">链接按钮</a>
+    <button type="button" class="btn btn-success">按钮</button>
+    <input type="button" class="btn btn-success" value="输入按钮">
+    <input type="submit" class="btn btn-success" value="提交按钮">
+    <input type="reset" class="btn btn-success" value="重置按钮">
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>按钮轮廓</h2>
+    <button type="button" class="btn btn-outline-primary">主要</button>
+    <button type="button" class="btn btn-outline-secondary">次要</button>
+    <button type="button" class="btn btn-outline-success">成功</button>
+    <button type="button" class="btn btn-outline-info">信息</button>
+    <button type="button" class="btn btn-outline-warning">警告</button>
+    <button type="button" class="btn btn-outline-danger">危险</button>
+    <button type="button" class="btn btn-outline-dark">深色</button>
+    <button type="button" class="btn btn-outline-light text-dark">浅色</button>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>按钮大小</h2>
+    <button type="button" class="btn btn-primary btn-lg">大型</button>
+    <button type="button" class="btn btn-primary btn-md">默认</button>
+    <button type="button" class="btn btn-primary btn-sm">小型</button>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>块级按钮</h2>
+    <p>如需创建跨越父元素整个宽度的块级按钮，请在父元素上使用 .d-grid "helper" 类：</p>
+    <div class="d-grid">
+        <button type="button" class="btn btn-primary btn-block">全宽按钮</button>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>块级按钮</h2>
+    <p>如果您有很多块级按钮，你可以使用 .gap-* 类控制它们之间的间距：</p>
+    <div class="d-grid gap-3">
+        <button type="button" class="btn btn-primary btn-block">全宽按钮</button>
+        <button type="button" class="btn btn-primary btn-block">全宽按钮</button>
+        <button type="button" class="btn btn-primary btn-block">全宽按钮</button>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>按钮状态</h2>
+    <button type="button" class="btn btn-primary">主要按钮</button>
+    <button type="button" class="btn btn-primary active">活动的主要按钮</button>
+    <button type="button" class="btn btn-primary" disabled>禁用的主要按钮</button>
+    <a href="#" class="btn btn-primary disabled">禁用链接</a>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>加载器按钮</h2>
+    <p>向按钮添加加载器：</p>
+
+    <button class="btn btn-primary">
+        <span class="spinner-border spinner-border-sm"></span>
+    </button>
+
+    <button class="btn btn-primary">
+        <span class="spinner-border spinner-border-sm"></span>
+        Loading..
+    </button>
+
+    <button class="btn btn-primary" disabled>
+        <span class="spinner-border spinner-border-sm"></span>
+        Loading..
+    </button>
+
+    <button class="btn btn-primary" disabled>
+        <span class="spinner-grow spinner-grow-sm"></span>
+        Loading..
+    </button>
+</div>
+
+</body>
+</html>

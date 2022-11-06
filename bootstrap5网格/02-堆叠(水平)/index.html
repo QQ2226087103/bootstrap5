@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>BS堆叠(水平)</title>
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap的JS插件 -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <style>
+        div{
+            background: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid mt-3">
+    <h1>网格实例</h1>
+    <p>本例展示了一个简单的“堆叠到水平”的两列布局，这意味着它会在所有屏幕上产生 50%/50% 的拆分，除了超小型屏幕，它会自动堆叠 (100%)：</p>
+    <p>请调整浏览器窗口大小来查看效果。</p>
+    <div class="row">
+        <div class="col-sm-6 bg-primary text-white p-3">
+            Lorem ipsum...
+        </div>
+        <div class="col-sm-6 bg-dark text-white p-3">
+            Sed ut perspiciatis...
+        </div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h1>网格实例</h1>
+    <p>本例演示了在小型、中型、大型、xlarge 和 xxlarge 设备上的 50%/50% 拆分。在超小型设备上，它将堆叠（100% 宽度）。</p>
+    <p>请调整浏览器窗口大小来查看效果。</p>
+    <div class="row">
+        <div class="col-sm-6 bg-primary text-white p-3">
+            Lorem ipsum...
+        </div>
+        <div class="col-sm-6 bg-dark text-white p-3">
+            Sed ut perspiciatis...
+        </div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container-fluid mt-3">
+    <h1>自动布局列</h1>
+    <p>在 Bootstrap 5 中，有一种简单的方法可以为所有设备创建等宽的列：只需从 .col-size-* 中删除数字，并仅在 col 元素上使用 .col-size 类。Bootstrap 将识别有多少列，并且每列将获得相同的宽度。size 类（sm、md 等）决定了列何时应该响应：</p>
+    <p>两列：所有屏幕上的 50% 宽度，除了超小型设备（在小于 576px 宽的屏幕上是 100% 宽度）</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm bg-primary text-white p-3">1 of 2</div>
+            <div class="col-sm bg-dark text-white p-3">2 of 2</div>
+        </div>
+    </div>
+    <br>
+
+    <p>四列：所有屏幕上的 25% 宽度，除了超小型设备（在小于 576px 宽的屏幕上是 100% 宽度）</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm bg-primary text-white p-3">1 of 4</div>
+            <div class="col-sm bg-dark text-white p-3">2 of 4</div>
+            <div class="col-sm bg-primary text-white p-3">3 of 4</div>
+            <div class="col-sm bg-dark text-white p-3">4 of 4</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

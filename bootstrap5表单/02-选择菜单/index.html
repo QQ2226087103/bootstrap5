@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>BS选择菜单</title>
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap的JS插件 -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <style>
+        div{
+            background: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-3">
+    <h2>选择菜单</h2>
+    <p>如需在 Bootstrap 5 中设置选择菜单的样式，请将 .form-select 类添加到 select 元素：</p>
+    <form action="/action_page.php">
+        <label for="sel1" class="form-label">选择菜单（选择一项）：</label>
+        <select class="form-select" id="sel1" name="sellist1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+        <br>
+
+        <label for="sel2" class="form-label">多选菜单（按住 ctrl 或 shift（或用鼠标拖动）可选择多个）：</label>
+        <select multiple class="form-select" id="sel2" name="sellist2">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+        <button type="submit" class="btn btn-primary mt-3">提交</button>
+    </form>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>选择菜单的大小</h2>
+    <p>请使用 .form-select-lg 或 .form-select-sm 类来改变选择菜单的大小：</p>
+    <form>
+        <select class="form-select form-select-lg">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+
+        <select class="form-select mt-3">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+
+        <select class="form-select form-select-sm mt-3">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+    </form>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>禁用选择菜单</h2>
+    <p>请使用 disabled 属性禁用选择菜单：</p>
+    <form>
+        <select class="form-select" disabled>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+    </form>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>数据列表</h2>
+    <form action="/action_page.php">
+        <label for="browser" class="form-label">请从列表中选择您的浏览器：</label>
+        <input class="form-control" list="browsers" name="browser" id="browser">
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <button type="submit" class="btn btn-primary mt-3">提交</button>
+    </form>
+</div>
+
+</body>
+</html>

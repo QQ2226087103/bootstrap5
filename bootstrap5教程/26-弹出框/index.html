@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>BS弹出框</title>
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap的JS插件 -->
+    <script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+    <h3>弹出框实例</h3>
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="弹出框标题" data-bs-content="弹出框内的一些内容">
+        切换弹出框
+    </button>
+</div>
+
+<script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+    })
+</script>
+
+<hr/>
+
+<div class="container mt-3">
+    <h3>弹出框定位</h3>
+
+    <a href="#" title="标题" data-bs-toggle="popover" data-bs-placement="top" data-content="Content">Top</a>
+    <a href="#" title="标题" data-bs-toggle="popover" data-bs-placement="bottom" data-content="Content">Bottom</a>
+    <a href="#" title="标题" data-bs-toggle="popover" data-bs-placement="left" data-content="Content">Left</a>
+    <a href="#" title="标题" data-bs-toggle="popover" data-bs-placement="right" data-content="Content">Right</a>
+</div>
+
+<script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+    })
+</script>
+
+<hr/>
+
+<div class="container mt-3">
+    <h3>关闭弹出框</h3>
+
+    <a href="#" title="关闭弹出框" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="单击文档中的任意位置可关闭此弹出窗口">点击我</a>
+</div>
+
+<script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+    })
+</script>
+
+<hr/>
+
+<div class="container mt-3">
+    <h3>悬停弹出框</h3>
+
+    <a href="#" title="标题" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="弹出框文本">请在我上方悬停</a>
+</div>
+
+<script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+    })
+</script>
+
+</body>
+</html>

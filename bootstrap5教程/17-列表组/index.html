@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>BS列表组</title>
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap的JS插件 -->
+    <script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+    <h2>基础的列表组</h2>
+    <ul class="list-group">
+        <li class="list-group-item">第一项</li>
+        <li class="list-group-item">第二项</li>
+        <li class="list-group-item">第三项</li>
+    </ul>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>列表组中的活动项目</h2>
+    <ul class="list-group">
+        <li class="list-group-item active">活动项目</li>
+        <li class="list-group-item">第二项</li>
+        <li class="list-group-item">第三项</li>
+    </ul>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>包含链接项的列表组</h2>
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">第一项</a>
+        <a href="#" class="list-group-item list-group-item-action">第二项</a>
+        <a href="#" class="list-group-item list-group-item-action">第三项</a>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>包含禁用项目的列表组</h2>
+    <p>.disabled 类为禁用的项目添加了较浅的文本颜色。当在链接上使用时，将去除悬停效果：</p>
+    <div class="list-group">
+        <a href="#" class="list-group-item disabled">被禁用的项目</a>
+        <a href="#" class="list-group-item disabled">被禁用的项目</a>
+        <a href="#" class="list-group-item">第三项</a>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>删除边框</h2>
+    <p>使用 .list-group-flush 类可删除边框和圆角：</p>
+</div>
+
+<div class="container mt-3">
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">第一项</li>
+        <li class="list-group-item">第二项</li>
+        <li class="list-group-item">第三项</li>
+        <li class="list-group-item">第四项</li>
+    </ul>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>带编号的列表组</h2>
+    <p>使用 .list-group-numbered 类可创建前面带有数字的列表项：</p>
+</div>
+
+<div class="container mt-3">
+    <ol class="list-group list-group-numbered">
+        <li class="list-group-item">第一项</li>
+        <li class="list-group-item">第二项</li>
+        <li class="list-group-item">第三项</li>
+    </ol>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>水平列表组</h2>
+    <p>.list-group-horizontal 类水平而不是垂直显示列表项：</p>
+    <ul class="list-group list-group-horizontal">
+        <li class="list-group-item">第一项</li>
+        <li class="list-group-item">第二项</li>
+        <li class="list-group-item">第三项</li>
+        <li class="list-group-item">第四项</li>
+    </ul>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>设置上下文类的列表组</h2>
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-success">Success item</li>
+        <li class="list-group-item list-group-item-secondary">Secondary item</li>
+        <li class="list-group-item list-group-item-info">Info item</li>
+        <li class="list-group-item list-group-item-warning">Warning item</li>
+        <li class="list-group-item list-group-item-danger">Danger item</li>
+        <li class="list-group-item list-group-item-primary">Primary item</li>
+        <li class="list-group-item list-group-item-dark">Dark item</li>
+        <li class="list-group-item list-group-item-light">Light item</li>
+    </ul>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>带有上下文类的链接项目</h2>
+    <p>请将鼠标移到链接的项目上来查看悬停效果：</p>
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">Action item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-success">Success item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Secondary item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-info">Info item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Warning item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Danger item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Primary item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Dark item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-light">Light item</a>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>带徽章的列表组</h2>
+    <p>将 .badge 类与 utility/helper 类结合起来，可在列表组中添加徽章：</p>
+    <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            Inbox
+            <span class="badge bg-primary rounded-pill">12</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            Ads
+            <span class="badge bg-primary rounded-pill">50</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            Junk
+            <span class="badge bg-primary rounded-pill">99</span>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

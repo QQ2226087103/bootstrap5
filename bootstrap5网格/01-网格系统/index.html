@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>BS网格系统</title>
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap的JS插件 -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <style>
+        div{
+            background: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid mt-3">
+    <h1>基本网格结构</h1>
+    <p>请调整浏览器窗口大小来查看效果。</p>
+    <p>当屏幕宽度小于 576px 时，第一行、第二行和第三行会自动堆叠在一起。</p>
+
+    <!-- 控制列宽，以及它们在不同设备上的显示方式 -->
+    <div class="row">
+        <div class="col-sm-6 bg-primary text-white">50%</div>
+        <div class="col-sm-6 bg-dark text-white">50%</div>
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="col-sm-4 bg-primary text-white">33.33%</div>
+        <div class="col-sm-4 bg-dark text-white">33.33%</div>
+        <div class="col-sm-4 bg-primary text-white">33.33%</div>
+    </div>
+    <br>
+
+    <!-- 或者让 Bootstrap 自动处理布局 -->
+    <div class="row">
+        <div class="col-sm bg-primary text-white">25%</div>
+        <div class="col-sm bg-dark text-white">25%</div>
+        <div class="col-sm bg-primary text-white">25%</div>
+        <div class="col-sm bg-dark text-white">25%</div>
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="col bg-primary text-white">25%</div>
+        <div class="col bg-dark text-white">25%</div>
+        <div class="col bg-primary text-white">25%</div>
+        <div class="col bg-dark text-white">25%</div>
+    </div>
+</div>
+
+</body>
+</html>

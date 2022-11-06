@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>BS Toast</title>
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap的JS插件 -->
+    <script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+    <h3>Toast 实例</h3>
+    <p>Toast 类似警告框，它只在发生某些事情时显示几秒钟（即当用户单击按钮、提交表单等时）。</p>
+    <p>在本例中，我们使用 .show 类来默认显示 toast。您可以通过单击 toast 标题内的关闭 (x) 图标来关闭它。</p>
+
+    <div class="toast show">
+        <div class="toast-header">
+            <strong class="me-auto">Toast 标题</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+        </div>
+        <div class="toast-body">
+            <p>toast 主体内的文本。</p>
+        </div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h3>Toast 实例</h3>
+    <p>在这个例子中，我们使用一个按钮来显示 toast 消息。</p>
+
+    <button type="button" class="btn btn-primary" id="toastbtn">显示 Toast</button>
+
+    <div class="toast">
+        <div class="toast-header">
+            <strong class="me-auto">Toast 标题</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+        </div>
+        <div class="toast-body">
+            <p>toast 主体内的文本。</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById("toastbtn").onclick = function() {
+        var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+        var toastList = toastElList.map(function(toastEl) {
+            return new bootstrap.Toast(toastEl)
+        })
+        toastList.forEach(toast => toast.show())
+    }
+</script>
+
+</body>
+</html>

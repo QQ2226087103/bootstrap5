@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>BS输入框</title>
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap的JS插件 -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <style>
+        div{
+            background: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-3">
+    <h2>输入组</h2>
+    <p>.input-group 类是一种容器，通过在输入字段的前面或后面添加图标、文本或按钮作为“帮助文本”来增强输入。</p>
+    <p>如需设置指定帮助文本的样式，请使用 .input-group-text 类：</p>
+
+    <form action="/action_page.php">
+        <div class="input-group mb-3">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" placeholder="用户名" name="usrname">
+        </div>
+
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="您的电邮" name="email">
+            <span class="input-group-text">@example.com</span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">提交</button>
+    </form>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>输入组大小</h2>
+    <p>请将 .input-group-sm 类用于小型输入组，将 .input-group-lg 用于大型输入组：</p>
+
+    <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text">小型</span>
+        <input type="text" class="form-control">
+    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text">默认</span>
+        <input type="text" class="form-control">
+    </div>
+    <div class="input-group input-group-lg mb-3">
+        <span class="input-group-text">大型</span>
+        <input type="text" class="form-control">
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>多个输入和助手</h2>
+    <p>添加多个输入控件或插件：</p>
+
+    <!-- 多个输入控件 -->
+    <div class="input-group mb-3">
+        <span class="input-group-text">人名</span>
+        <input type="text" class="form-control" placeholder="姓">
+        <input type="text" class="form-control" placeholder="名">
+    </div>
+
+    <!-- 多个插件/帮助文本 -->
+    <div class="input-group mb-3">
+        <span class="input-group-text">一</span>
+        <span class="input-group-text">二</span>
+        <span class="input-group-text">三</span>
+        <input type="text" class="form-control">
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h3>带复选框和单选框的输入组</h3>
+    <p>您还可以使用复选框或单选按钮代替文本：</p>
+
+    <!-- Multiple inputs -->
+    <div class="input-group mb-3">
+        <div class="input-group-text">
+            <input type="checkbox">
+        </div>
+        <input type="text" class="form-control" placeholder="一些文本">
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-text">
+            <input type="radio">
+        </div>
+        <input type="text" class="form-control" placeholder="一些文本">
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h3>输入组按钮</h3>
+
+    <div class="input-group mb-3 mt-3">
+        <button class="btn btn-outline-primary" type="button">基础按钮</button>
+        <input type="text" class="form-control" placeholder="一些文本">
+    </div>
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="搜索">
+        <button class="btn btn-success" type="submit">Go</button>
+    </div>
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="一些文本">
+        <button class="btn btn-primary" type="button">OK</button>
+        <button class="btn btn-danger" type="button">Cancel</button>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h3>带下拉按钮的输入组</h3>
+    <p>在输入组中添加下拉按钮。请注意，您不需要像往常一样的 .dropdown 包装器。</p>
+
+    <div class="input-group mt-3 mb-3">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+            下拉按钮
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">链接 1</a></li>
+            <li><a class="dropdown-item" href="#">链接 2</a></li>
+            <li><a class="dropdown-item" href="#">链接 3</a></li>
+        </ul>
+        <input type="text" class="form-control" placeholder="用户名">
+    </div>
+</div>
+
+</body>
+</html>

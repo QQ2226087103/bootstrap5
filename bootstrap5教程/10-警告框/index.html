@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>BS警告框</title>
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap的JS插件 -->
+    <script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+    <h2>警告框</h2>
+    <p>警报是使用 .alert 类创建的，然后是上下文颜色类：</p>
+    <div class="alert alert-success">
+        <strong>成功！</strong>此警报框表示成功或积极的动作。
+    </div>
+    <div class="alert alert-info">
+        <strong>信息！</strong>此警报框表示中性的信息更改或操作。
+    </div>
+    <div class="alert alert-warning">
+        <strong>警告！</strong>此警报框可能表示可能需要注意的警告。
+    </div>
+    <div class="alert alert-danger">
+        <strong>危险！</strong>此警报框表示危险或潜在的负面操作。
+    </div>
+    <div class="alert alert-primary">
+        <strong>基本！</strong>此警报框表示重要的动作。
+    </div>
+    <div class="alert alert-secondary">
+        <strong>次要！</strong>此警报框表示不太重要的操作。
+    </div>
+    <div class="alert alert-dark">
+        <strong>深色！</strong>深灰色警报。
+    </div>
+    <div class="alert alert-light">
+        <strong>浅色！</strong>浅灰色警报。
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>警告链接</h2>
+    <p>将 .alert-link 类添加到警告框内的任何链接，可创建“匹配的彩色链接”：</p>
+    <div class="alert alert-success">
+        <strong>成功！</strong>您应该<a href="#" class="alert-link">阅读这条消息</a>。
+    </div>
+    <div class="alert alert-info">
+        <strong>信息！</strong>您应该<a href="#" class="alert-link">阅读这条消息</a>。
+    </div>
+    <div class="alert alert-warning">
+        <strong>警告！</strong>您应该<a href="#" class="alert-link">阅读这条消息</a>。
+    </div>
+    <div class="alert alert-danger">
+        <strong>危险！</strong>您应该<a href="#" class="alert-link">阅读这条消息</a>。
+    </div>
+    <div class="alert alert-primary">
+        <strong>基本！</strong>您应该<a href="#" class="alert-link">阅读这条消息</a>。
+    </div>
+    <div class="alert alert-secondary">
+        <strong>次要！</strong>您应该<a href="#" class="alert-link">阅读这条消息</a>。
+    </div>
+    <div class="alert alert-dark">
+        <strong>深色！</strong>您应该<a href="#" class="alert-link">阅读这条消息</a>。
+    </div>
+    <div class="alert alert-light">
+        <strong>浅色！</strong>您应该<a href="#" class="alert-link">阅读这条消息</a>。
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>警告框动画</h2>
+    <p>.fade 和 .show 类在关闭警报消息时添加淡入淡出效果。</p>
+    <div class="alert alert-success alert-dismissible fade show">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>成功！</strong>此警报框表示成功或积极的动作。
+    </div>
+    <div class="alert alert-info alert-dismissible fade show">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>信息！</strong>此警报框表示中性的信息更改或操作。
+    </div>
+    <div class="alert alert-warning alert-dismissible fade show">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>警告！</strong>此警报框表示可能需要注意的警告。
+    </div>
+    <div class="alert alert-danger alert-dismissible fade show">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>危险！</strong>此警报框表示危险或潜在的负面操作。
+    </div>
+    <div class="alert alert-primary alert-dismissible fade show">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>基本！</strong>此警报框表示重要的动作。
+    </div>
+    <div class="alert alert-secondary alert-dismissible fade show">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>次要！</strong>此警报框表示不太重要的操作。
+    </div>
+    <div class="alert alert-dark alert-dismissible fade show">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>深色！</strong>深灰色警报。
+    </div>
+    <div class="alert alert-light alert-dismissible fade show">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>浅色！</strong>浅灰色警报。
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>警告框</h2>
+    <p>设置了 class="btn-close" 和 data-bs-dismiss="alert" 的按钮用于关闭警报框。</p>
+    <p>alert-dismissible 类将按钮向右侧对齐。</p>
+    <div class="alert alert-success alert-dismissible">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>成功！</strong>此警报框表示成功或积极的动作。
+    </div>
+    <div class="alert alert-info alert-dismissible">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>信息！</strong>此警报框表示中性的信息更改或操作。
+    </div>
+    <div class="alert alert-warning alert-dismissible">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>警告！</strong>此警报框可能表示可能需要注意的警告。
+    </div>
+    <div class="alert alert-danger alert-dismissible">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>危险！</strong>此警报框表示危险或潜在的负面操作。
+    </div>
+    <div class="alert alert-primary alert-dismissible">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>基本！</strong>此警报框表示重要的动作。
+    </div>
+    <div class="alert alert-secondary alert-dismissible">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>次要！</strong>此警报框表示不太重要的操作。
+    </div>
+    <div class="alert alert-dark alert-dismissible">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>深色！</strong>深灰色警报。
+    </div>
+    <div class="alert alert-light alert-dismissible">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <strong>浅色！</strong>浅灰色警报。
+    </div>
+</div>
+
+</body>
+</html>

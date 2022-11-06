@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>BS Flex</title>
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap的JS插件 -->
+    <script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+    <h2>弹性框</h2>
+    <p>如需创建 flexbox 容器并将直接子项转换为 flex 项，请使用 d-flex 类：</p>
+    <div class="d-flex p-3 bg-secondary text-white">
+        <div class="p-2 bg-info">弹性项目 1</div>
+        <div class="p-2 bg-warning">弹性项目 2</div>
+        <div class="p-2 bg-primary">弹性项目 3</div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>行内弹性框</h2>
+    <p>如需创建行内 flexbox 容器，请使用 d-inline-flex 类：</p>
+    <div class="d-inline-flex p-3 bg-secondary text-white">
+        <div class="p-2 bg-info">弹性项目 1</div>
+        <div class="p-2 bg-warning">弹性项目 2</div>
+        <div class="p-2 bg-primary">弹性项目 3</div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>水平方向</h2>
+    <p>请使用 .flex-row 水平（并排）显示弹性项目。这是默认设置。</p>
+    <div class="d-flex flex-row bg-secondary mb-3">
+        <div class="p-2 bg-info">弹性项目 1</div>
+        <div class="p-2 bg-warning">弹性项目 2</div>
+        <div class="p-2 bg-primary">弹性项目 3</div>
+    </div>
+    <p>使用 .flex-row-reverse 可水平方向右对齐：</p>
+    <div class="d-flex flex-row-reverse bg-secondary">
+        <div class="p-2 bg-info">弹性项目 1</div>
+        <div class="p-2 bg-warning">弹性项目 2</div>
+        <div class="p-2 bg-primary">弹性项目 3</div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>垂直方向</h2>
+    <p>请使用 .flex-column 垂直显示 flex 项目（彼此堆叠）：</p>
+    <div class="d-flex flex-column mb-3">
+        <div class="p-2 bg-info">弹性项目 1</div>
+        <div class="p-2 bg-warning">弹性项目 2</div>
+        <div class="p-2 bg-primary">弹性项目 3</div>
+    </div>
+    <p>使用 .flex-column-reverse 反转垂直方向：</p>
+    <div class="d-flex flex-column-reverse">
+        <div class="p-2 bg-info">弹性项目 1</div>
+        <div class="p-2 bg-warning">弹性项目 2</div>
+        <div class="p-2 bg-primary">弹性项目 3</div>
+    </div>
+</div>
+
+<hr/>
+<div class="container mt-3">
+    <h2>对齐内容</h2>
+    <p>使用 .justify-content-* 类可改变弹性项目的对齐方式：</p>
+    <div class="d-flex justify-content-start bg-secondary mb-3">
+        <div class="p-2 bg-info">弹性项目 1</div>
+        <div class="p-2 bg-warning">弹性项目 2</div>
+        <div class="p-2 bg-primary">弹性项目 3</div>
+    </div>
+    <div class="d-flex justify-content-end bg-secondary mb-3">
+        <div class="p-2 bg-info">弹性项目 1</div>
+        <div class="p-2 bg-warning">弹性项目 2</div>
+        <div class="p-2 bg-primary">弹性项目 3</div>
+    </div>
+    <div class="d-flex justify-content-center bg-secondary mb-3">
+        <div class="p-2 bg-info">弹性项目 1</div>
+        <div class="p-2 bg-warning">弹性项目 2</div>
+        <div class="p-2 bg-primary">弹性项目 3</div>
+    </div>
+    <div class="d-flex justify-content-between bg-secondary mb-3">
+        <div class="p-2 bg-info">弹性项目 1</div>
+        <div class="p-2 bg-warning">弹性项目 2</div>
+        <div class="p-2 bg-primary">弹性项目 3</div>
+    </div>
+    <div class="d-flex justify-content-around bg-secondary mb-3">
+        <div class="p-2 bg-info">弹性项目 1</div>
+        <div class="p-2 bg-warning">弹性项目 2</div>
+        <div class="p-2 bg-primary">弹性项目 3</div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>等宽</h2>
+    <p>在 flex 项目上使用 .flex-fill 可强制它们等宽：</p>
+    <div class="d-flex mb-3">
+        <div class="p-2 flex-fill bg-info">弹性项目 1</div>
+        <div class="p-2 flex-fill bg-warning">弹性项目 2</div>
+        <div class="p-2 flex-fill bg-primary">弹性项目 3</div>
+    </div>
+    <p>Example without .flex-fill:</p>
+    <div class="d-flex mb-3 bg-secondary">
+        <div class="p-2 bg-info">弹性项目 1</div>
+        <div class="p-2 bg-warning">弹性项目 2</div>
+        <div class="p-2 bg-primary">弹性项目 3</div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>伸展</h2>
+    <p>在 flex 项目上使用 .flex-grow-1 可占用多余的空间：</p>
+    <div class="d-flex mb-3">
+        <div class="p-2 bg-info">弹性项目 1</div>
+        <div class="p-2 bg-warning">弹性项目 2</div>
+        <div class="p-2 flex-grow-1 bg-primary">弹性项目 3</div>
+    </div>
+    <p>Example without .flex-grow-1:</p>
+    <div class="d-flex mb-3 bg-secondary">
+        <div class="p-2 bg-info">弹性项目 1</div>
+        <div class="p-2 bg-warning">弹性项目 2</div>
+        <div class="p-2 bg-primary">弹性项目 3</div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>顺序</h2>
+    <p>使用 .order 类可更改特定 flex 项的视觉顺序。有效的类从 0 到 5，其中最低的数字具有最高的优先级（order-1 显示在 order-2 之前，以此类推）：</p>
+    <div class="d-flex mb-3">
+        <div class="p-2 order-3 bg-info">弹性项目 1</div>
+        <div class="p-2 order-2 bg-warning">弹性项目 2</div>
+        <div class="p-2 order-1 bg-primary">弹性项目 3</div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>自动外边距</h2>
+    <p>使用 .ms-auto（将项目向右推）或使用 .me-auto（将项目向左推）可轻松地为弹性项目添加自动边距：</p>
+    <div class="d-flex mb-3 bg-secondary">
+        <div class="p-2 ms-auto bg-info">弹性项目 1</div>
+        <div class="p-2 bg-warning">弹性项目 2</div>
+        <div class="p-2 bg-primary">弹性项目 3</div>
+    </div>
+    <div class="d-flex mb-3 bg-secondary">
+        <div class="p-2  bg-info">弹性项目 1</div>
+        <div class="p-2 bg-warning">弹性项目 2</div>
+        <div class="p-2 me-auto bg-primary">弹性项目 3</div>
+    </div>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>换行</h2>
+    <p>通过 .flex-nowrap（默认）、.flex-wrap 或 .flex-wrap-reverse，可控制 flex 项目如何包装在 flex 容器中。</p>
+    <p><code>.flex-wrap:</code></p>
+    <div class="d-flex flex-wrap bg-light">
+        <div class="p-2 border">弹性项目 1</div>
+        <div class="p-2 border">弹性项目 2</div>
+        <div class="p-2 border">弹性项目 3</div>
+        <div class="p-2 border">弹性项目 4</div>
+        <div class="p-2 border">弹性项目 5</div>
+        <div class="p-2 border">弹性项目 6</div>
+        <div class="p-2 border">弹性项目 7</div>
+        <div class="p-2 border">弹性项目 8</div>
+        <div class="p-2 border">弹性项目 9</div>
+        <div class="p-2 border">弹性项目 10</div>
+        <div class="p-2 border">弹性项目 11</div>
+        <div class="p-2 border">弹性项目 12</div>
+        <div class="p-2 border">弹性项目 13 </div>
+        <div class="p-2 border">弹性项目 14</div>
+        <div class="p-2 border">弹性项目 15</div>
+        <div class="p-2 border">弹性项目 16</div>
+        <div class="p-2 border">弹性项目 17</div>
+        <div class="p-2 border">弹性项目 18</div>
+        <div class="p-2 border">弹性项目 19</div>
+        <div class="p-2 border">弹性项目 20</div>
+        <div class="p-2 border">弹性项目 21</div>
+        <div class="p-2 border">弹性项目 22</div>
+        <div class="p-2 border">弹性项目 23</div>
+        <div class="p-2 border">弹性项目 24</div>
+        <div class="p-2 border">弹性项目 25</div>
+    </div>
+    <br>
+    <p><code>.flex-wrap-reverse:</code></p>
+    <div class="d-flex flex-wrap-reverse bg-light">
+        <div class="p-2 border">弹性项目 1</div>
+        <div class="p-2 border">弹性项目 2</div>
+        <div class="p-2 border">弹性项目 3</div>
+        <div class="p-2 border">弹性项目 4</div>
+        <div class="p-2 border">弹性项目 5</div>
+        <div class="p-2 border">弹性项目 6</div>
+        <div class="p-2 border">弹性项目 7</div>
+        <div class="p-2 border">弹性项目 8</div>
+        <div class="p-2 border">弹性项目 9</div>
+        <div class="p-2 border">弹性项目 10</div>
+        <div class="p-2 border">弹性项目 11</div>
+        <div class="p-2 border">弹性项目 12</div>
+        <div class="p-2 border">弹性项目 13 </div>
+        <div class="p-2 border">弹性项目 14</div>
+        <div class="p-2 border">弹性项目 15</div>
+        <div class="p-2 border">弹性项目 16</div>
+        <div class="p-2 border">弹性项目 17</div>
+        <div class="p-2 border">弹性项目 18</div>
+        <div class="p-2 border">弹性项目 19</div>
+        <div class="p-2 border">弹性项目 20</div>
+        <div class="p-2 border">弹性项目 21</div>
+        <div class="p-2 border">弹性项目 22</div>
+        <div class="p-2 border">弹性项目 23</div>
+        <div class="p-2 border">弹性项目 24</div>
+        <div class="p-2 border">弹性项目 25</div>
+    </div>
+    <br>
+    <p><code>.flex-nowrap:</code></p>
+    <div class="d-flex flex-nowrap bg-light">
+        <div class="p-2 border">弹性项目 1</div>
+        <div class="p-2 border">弹性项目 2</div>
+        <div class="p-2 border">弹性项目 3</div>
+        <div class="p-2 border">弹性项目 4</div>
+        <div class="p-2 border">弹性项目 5</div>
+        <div class="p-2 border">弹性项目 6</div>
+        <div class="p-2 border">弹性项目 7</div>
+        <div class="p-2 border">弹性项目 8</div>
+        <div class="p-2 border">弹性项目 9</div>
+        <div class="p-2 border">弹性项目 10</div>
+        <div class="p-2 border">弹性项目 11</div>
+        <div class="p-2 border">弹性项目 12</div>
+        <div class="p-2 border">弹性项目 13 </div>
+        <div class="p-2 border">弹性项目 14</div>
+        <div class="p-2 border">弹性项目 15</div>
+        <div class="p-2 border">弹性项目 16</div>
+        <div class="p-2 border">弹性项目 17</div>
+        <div class="p-2 border">弹性项目 18</div>
+        <div class="p-2 border">弹性项目 19</div>
+        <div class="p-2 border">弹性项目 20</div>
+        <div class="p-2 border">弹性项目 21</div>
+        <div class="p-2 border">弹性项目 22</div>
+        <div class="p-2 border">弹性项目 23</div>
+        <div class="p-2 border">弹性项目 24</div>
+        <div class="p-2 border">弹性项目 25</div>
+        <div class="p-2 border">弹性项目 26</div>
+        <div class="p-2 border">弹性项目 27</div>
+        <div class="p-2 border">弹性项目 28</div>
+        <div class="p-2 border">弹性项目 29</div>
+        <div class="p-2 border">弹性项目 30</div>
+        <div class="p-2 border">弹性项目 31</div>
+        <div class="p-2 border">弹性项目 32</div>
+        <div class="p-2 border">弹性项目 33</div>
+        <div class="p-2 border">弹性项目 34</div>
+        <div class="p-2 border">弹性项目 35</div>
+    </div>
+    <br>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>对齐内容</h2>
+    <p>请使用 .align-content-* 类控制弹性项目的垂直对齐方式。</p>
+    <p><b>注释：</b>这个例子在小型设备上看起来不太好。另请注意，这些类对单行 flex 项没有影响。</p>
+    <p>.align-content-start（默认）：</p>
+    <div class="d-flex flex-wrap align-content-start bg-light" style="height:300px">
+        <div class="p-2 border">弹性项目 1</div>
+        <div class="p-2 border">弹性项目 2</div>
+        <div class="p-2 border">弹性项目 3</div>
+        <div class="p-2 border">弹性项目 4</div>
+        <div class="p-2 border">弹性项目 5</div>
+        <div class="p-2 border">弹性项目 6</div>
+        <div class="p-2 border">弹性项目 7</div>
+        <div class="p-2 border">弹性项目 8</div>
+        <div class="p-2 border">弹性项目 9</div>
+        <div class="p-2 border">弹性项目 10</div>
+        <div class="p-2 border">弹性项目 11</div>
+        <div class="p-2 border">弹性项目 12</div>
+        <div class="p-2 border">弹性项目 13 </div>
+        <div class="p-2 border">弹性项目 14</div>
+        <div class="p-2 border">弹性项目 15</div>
+        <div class="p-2 border">弹性项目 16</div>
+        <div class="p-2 border">弹性项目 17</div>
+        <div class="p-2 border">弹性项目 18</div>
+        <div class="p-2 border">弹性项目 19</div>
+        <div class="p-2 border">弹性项目 20</div>
+        <div class="p-2 border">弹性项目 21</div>
+        <div class="p-2 border">弹性项目 22</div>
+        <div class="p-2 border">弹性项目 23</div>
+        <div class="p-2 border">弹性项目 24</div>
+        <div class="p-2 border">弹性项目 25</div>
+    </div>
+    <br>
+    <p>.align-content-end:</p>
+    <div class="d-flex flex-wrap align-content-end bg-light" style="height:300px">
+        <div class="p-2 border">弹性项目 1</div>
+        <div class="p-2 border">弹性项目 2</div>
+        <div class="p-2 border">弹性项目 3</div>
+        <div class="p-2 border">弹性项目 4</div>
+        <div class="p-2 border">弹性项目 5</div>
+        <div class="p-2 border">弹性项目 6</div>
+        <div class="p-2 border">弹性项目 7</div>
+        <div class="p-2 border">弹性项目 8</div>
+        <div class="p-2 border">弹性项目 9</div>
+        <div class="p-2 border">弹性项目 10</div>
+        <div class="p-2 border">弹性项目 11</div>
+        <div class="p-2 border">弹性项目 12</div>
+        <div class="p-2 border">弹性项目 13 </div>
+        <div class="p-2 border">弹性项目 14</div>
+        <div class="p-2 border">弹性项目 15</div>
+        <div class="p-2 border">弹性项目 16</div>
+        <div class="p-2 border">弹性项目 17</div>
+        <div class="p-2 border">弹性项目 18</div>
+        <div class="p-2 border">弹性项目 19</div>
+        <div class="p-2 border">弹性项目 20</div>
+        <div class="p-2 border">弹性项目 21</div>
+        <div class="p-2 border">弹性项目 22</div>
+        <div class="p-2 border">弹性项目 23</div>
+        <div class="p-2 border">弹性项目 24</div>
+        <div class="p-2 border">弹性项目 25</div>
+    </div>
+    <br>
+    <p>.align-content-center:</p>
+    <div class="d-flex flex-wrap align-content-center bg-light" style="height:300px">
+        <div class="p-2 border">弹性项目 1</div>
+        <div class="p-2 border">弹性项目 2</div>
+        <div class="p-2 border">弹性项目 3</div>
+        <div class="p-2 border">弹性项目 4</div>
+        <div class="p-2 border">弹性项目 5</div>
+        <div class="p-2 border">弹性项目 6</div>
+        <div class="p-2 border">弹性项目 7</div>
+        <div class="p-2 border">弹性项目 8</div>
+        <div class="p-2 border">弹性项目 9</div>
+        <div class="p-2 border">弹性项目 10</div>
+        <div class="p-2 border">弹性项目 11</div>
+        <div class="p-2 border">弹性项目 12</div>
+        <div class="p-2 border">弹性项目 13 </div>
+        <div class="p-2 border">弹性项目 14</div>
+        <div class="p-2 border">弹性项目 15</div>
+        <div class="p-2 border">弹性项目 16</div>
+        <div class="p-2 border">弹性项目 17</div>
+        <div class="p-2 border">弹性项目 18</div>
+        <div class="p-2 border">弹性项目 19</div>
+        <div class="p-2 border">弹性项目 20</div>
+        <div class="p-2 border">弹性项目 21</div>
+        <div class="p-2 border">弹性项目 22</div>
+        <div class="p-2 border">弹性项目 23</div>
+        <div class="p-2 border">弹性项目 24</div>
+        <div class="p-2 border">弹性项目 25</div>
+    </div>
+    <br>
+    <p>.align-content-around:</p>
+    <div class="d-flex flex-wrap align-content-around bg-light" style="height:300px">
+        <div class="p-2 border">弹性项目 1</div>
+        <div class="p-2 border">弹性项目 2</div>
+        <div class="p-2 border">弹性项目 3</div>
+        <div class="p-2 border">弹性项目 4</div>
+        <div class="p-2 border">弹性项目 5</div>
+        <div class="p-2 border">弹性项目 6</div>
+        <div class="p-2 border">弹性项目 7</div>
+        <div class="p-2 border">弹性项目 8</div>
+        <div class="p-2 border">弹性项目 9</div>
+        <div class="p-2 border">弹性项目 10</div>
+        <div class="p-2 border">弹性项目 11</div>
+        <div class="p-2 border">弹性项目 12</div>
+        <div class="p-2 border">弹性项目 13 </div>
+        <div class="p-2 border">弹性项目 14</div>
+        <div class="p-2 border">弹性项目 15</div>
+        <div class="p-2 border">弹性项目 16</div>
+        <div class="p-2 border">弹性项目 17</div>
+        <div class="p-2 border">弹性项目 18</div>
+        <div class="p-2 border">弹性项目 19</div>
+        <div class="p-2 border">弹性项目 20</div>
+        <div class="p-2 border">弹性项目 21</div>
+        <div class="p-2 border">弹性项目 22</div>
+        <div class="p-2 border">弹性项目 23</div>
+        <div class="p-2 border">弹性项目 24</div>
+        <div class="p-2 border">弹性项目 25</div>
+    </div>
+    <br>
+    <p>.align-content-stretch:</p>
+    <div class="d-flex flex-wrap align-content-stretch bg-light" style="height:300px">
+        <div class="p-2 border">弹性项目 1</div>
+        <div class="p-2 border">弹性项目 2</div>
+        <div class="p-2 border">弹性项目 3</div>
+        <div class="p-2 border">弹性项目 4</div>
+        <div class="p-2 border">弹性项目 5</div>
+        <div class="p-2 border">弹性项目 6</div>
+        <div class="p-2 border">弹性项目 7</div>
+        <div class="p-2 border">弹性项目 8</div>
+        <div class="p-2 border">弹性项目 9</div>
+        <div class="p-2 border">弹性项目 10</div>
+        <div class="p-2 border">弹性项目 11</div>
+        <div class="p-2 border">弹性项目 12</div>
+        <div class="p-2 border">弹性项目 13 </div>
+        <div class="p-2 border">弹性项目 14</div>
+        <div class="p-2 border">弹性项目 15</div>
+        <div class="p-2 border">弹性项目 16</div>
+        <div class="p-2 border">弹性项目 17</div>
+        <div class="p-2 border">弹性项目 18</div>
+        <div class="p-2 border">弹性项目 19</div>
+        <div class="p-2 border">弹性项目 20</div>
+        <div class="p-2 border">弹性项目 21</div>
+        <div class="p-2 border">弹性项目 22</div>
+        <div class="p-2 border">弹性项目 23</div>
+        <div class="p-2 border">弹性项目 24</div>
+        <div class="p-2 border">弹性项目 25</div>
+    </div>
+    <br>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>对齐项目</h2>
+    <p>请使用 .align-items-* 类控制单行弹性项目的垂直对齐方式。</p>
+    <p>.align-items-start:</p>
+    <div class="d-flex align-items-start bg-light" style="height:150px">
+        <div class="p-2 border">弹性项目 1</div>
+        <div class="p-2 border">弹性项目 2</div>
+        <div class="p-2 border">弹性项目 3</div>
+    </div>
+    <br>
+    <p>.align-items-end:</p>
+    <div class="d-flex align-items-end bg-light" style="height:150px">
+        <div class="p-2 border">弹性项目 1</div>
+        <div class="p-2 border">弹性项目 2</div>
+        <div class="p-2 border">弹性项目 3</div>
+    </div>
+    <br>
+    <p>.align-items-center:</p>
+    <div class="d-flex align-items-center bg-light" style="height:150px">
+        <div class="p-2 border">弹性项目 1</div>
+        <div class="p-2 border">弹性项目 2</div>
+        <div class="p-2 border">弹性项目 3</div>
+    </div>
+    <br>
+    <p>.align-items-baseline:</p>
+    <div class="d-flex align-items-baseline bg-light" style="height:150px">
+        <div class="p-2 border">弹性项目 1</div>
+        <div class="p-2 border">弹性项目 2</div>
+        <div class="p-2 border">弹性项目 3</div>
+    </div>
+    <br>
+    <p>.align-items-stretch (default):</p>
+    <div class="d-flex align-items-stretch bg-light" style="height:150px">
+        <div class="p-2 border">弹性项目 1</div>
+        <div class="p-2 border">弹性项目 2</div>
+        <div class="p-2 border">弹性项目 3</div>
+    </div>
+    <br>
+</div>
+
+<hr/>
+
+<div class="container mt-3">
+    <h2>自我对齐</h2>
+    <p>请使用 .align-self-* 类控制指定弹性项目的垂直对齐方式。</p>
+    <p>.align-self-start:</p>
+    <div class="d-flex bg-light" style="height:150px">
+        <div class="p-2 border">弹性项目 1</div>
+        <div class="p-2 border align-self-start">弹性项目 2</div>
+        <div class="p-2 border">弹性项目 3</div>
+    </div>
+    <br>
+    <p>.align-self-end:</p>
+    <div class="d-flex bg-light" style="height:150px">
+        <div class="p-2 border">弹性项目 1</div>
+        <div class="p-2 border align-self-end">弹性项目 2</div>
+        <div class="p-2 border">弹性项目 3</div>
+    </div>
+    <br>
+    <p>.align-self-center:</p>
+    <div class="d-flex bg-light" style="height:150px">
+        <div class="p-2 border">弹性项目 1</div>
+        <div class="p-2 border align-self-center">弹性项目 2</div>
+        <div class="p-2 border">弹性项目 3</div>
+    </div>
+    <br>
+    <p>.align-self-baseline:</p>
+    <div class="d-flex bg-light" style="height:150px">
+        <div class="p-2 border">弹性项目 1</div>
+        <div class="p-2 border align-self-baseline">弹性项目 2</div>
+        <div class="p-2 border">弹性项目 3</div>
+    </div>
+    <br>
+    <p>.align-self-stretch (default):</p>
+    <div class="d-flex bg-light" style="height:150px">
+        <div class="p-2 border">弹性项目 1</div>
+        <div class="p-2 border align-self-stretch">弹性项目 2</div>
+        <div class="p-2 border">弹性项目 3</div>
+    </div>
+    <br>
+</div>
+
+
+</body>
+</html>

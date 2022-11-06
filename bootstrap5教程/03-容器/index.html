@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>BS容器</title>
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap的JS插件 -->
+    <script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>固定容器</h1>
+    <p>使用 .container 类创建响应式、固定宽度的容器。。</p>
+    <p>请注意，它的宽度（max-width）会在不同的屏幕尺寸上发生变化</p>
+</div>
+
+<hr/>
+
+<div class="container-fluid">
+    <h1>流体容器</h1>
+    <p>这部分在 .container-fluid 类中。</p>
+    <p>.container-fluid 类提供全宽容器，跨越视口的整个宽度。使用 .container-fluid 类创建全宽容器，它总是跨越整个屏幕宽度（width 总是 100%）</p>
+</div>
+
+<hr/>
+
+<div class="container pt-5">
+    <h1>容器填充</h1>
+    <p>默认情况下，容器有左右填充（左右内边距），没有顶部或底部填充（上下内边距）。因此，我们常使用 spacing 工具（utilities），诸如额外的填充和边距，使它们看起来更好。</p>
+    <p>例如，.pt-5 的意思是“添加一个大的顶部填充”</p>
+</div>
+
+<hr/>
+
+<div class="container">
+    <h1>容器边框和颜色</h1>
+    <p>其他工具，诸如边框和颜色，也经常与容器一起使用：</p>
+    <div class="container p-5 my-5 border">这个容器有边框和额外的内边距和外边距。</div>
+
+    <div class="container p-5 my-5 bg-dark text-white">这个容器有深色背景色和白色文本，以及额外的内边距和外边距。</div>
+
+    <div class="container p-5 my-5 bg-primary text-white">这个容器有蓝色背景色和白色文本，以及额外的内边距和外边距。</div>
+</div>
+
+<hr/>
+
+<div class="container">
+    <h1>响应式容器</h1>
+    <p>您还可以使用 .container-sm|md|lg|xl 类来确定容器何时应该响应。</p>
+    <p>容器的 max-width 将在不同的屏幕尺寸/视口上发生变化</p>
+    <div class="container-sm">.container-sm</div>
+    <div class="container-md">.container-md</div>
+    <div class="container-lg">.container-lg</div>
+    <div class="container-xl">.container-xl</div>
+    <div class="container-xxl">.container-xxl</div>
+</div>
+
+</body>
+</html>

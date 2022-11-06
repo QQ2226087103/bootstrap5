@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>BS表单验证</title>
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap的JS插件 -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <style>
+        div{
+            background: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-3">
+    <h3>表单验证</h3>
+    <p>请尝试提交表单。</p>
+
+    <form action="/action_page.php" class="was-validated">
+        <div class="mb-3 mt-3">
+            <label for="uname" class="form-label">用户名：</label>
+            <input type="text" class="form-control" id="uname" placeholder="请输入用户名" name="uname" required>
+            <div class="valid-feedback">有效的。</div>
+            <div class="invalid-feedback">请填写此字段。</div>
+        </div>
+        <div class="mb-3">
+            <label for="pwd" class="form-label">密码：</label>
+            <input type="password" class="form-control" id="pwd" placeholder="请输入密码" name="pswd" required>
+            <div class="valid-feedback">有效的。</div>
+            <div class="invalid-feedback">请填写此字段。</div>
+        </div>
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="myCheck"  name="remember" required>
+            <label class="form-check-label" for="myCheck">我同意这些条款。</label>
+            <div class="valid-feedback">有效的。</div>
+            <div class="invalid-feedback">选中此复选框以继续。</div>
+        </div>
+        <button type="submit" class="btn btn-primary">提交</button>
+    </form>
+</div>
+
+</body>
+</html>
